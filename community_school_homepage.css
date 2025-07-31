@@ -1,0 +1,169 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+/* My solution: 
+ * date: 2025-08-01 04:40
+ * author: R Mowe
+**/
+@font-face {
+  font-family: "Fin Serif Display";
+  src:
+    url("fonts/FinSerifDisplay-Regular.woff2") format("woff2"),
+    url("fonts/FinSerifDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PermianSlabSerifTypeface";
+  src:
+    url("fonts/PermianSlabSerifTypeface.woff2") format("woff2"),
+    url("fonts/PermianSlabSerifTypeface.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alex Brush";
+  src:
+    url("fonts/AlexBrush-Regular.woff2") format("woff2"),
+    url("fonts/AlexBrush-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src:
+    url("fonts/FiraSans-Regular.woff2") format("woff2"),
+    url("fonts/FiraSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1 {
+  font-family: "Fin Serif Display", "Alex Brush", Garamond, serif;
+}
+
+h2 {
+  font-family: "Fira Sans", "PermianSlabSerifTypeface", Garamond, serif;
+}
+
+* {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 5em;
+  text-align: center; /* I chose to put this here as there's only one h1 */
+}
+
+h2 {
+  font-size: 3em;
+}
+
+p,
+li {
+  font-size: 1.8em;
+}
+
+a {
+  font-size: 1em;
+}
+
+/* h2 > p { */
+/* p:first-line { */
+p {
+  text-indent: 2em;
+}
+
+p + p {
+  text-indent: 0;
+}
+
+section {
+  text-align: justify;
+}
+
+section > ul,
+section > ol {
+  line-height: 3em;
+}
+
+aside {
+  padding-left: 8em;
+}
+
+aside > ul {
+  line-height: 3em;
+}
+
+nav > ul {
+  line-height: 8em;
+}
+
+nav > ul > li {
+  border: 2px solid #a66;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* text-align: center; */
+  padding-left: 2em;
+  list-style-type: none;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+}
