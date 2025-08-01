@@ -120,14 +120,13 @@ a {
   font-size: 1em;
 }
 
-/* h2 > p { */
-/* p:first-line { */
 p {
   text-indent: 2em;
 }
 
-p + p {
+section p:nth-of-type(even) {
   text-indent: 0;
+  /* font-size: 10em; */
 }
 
 section {
