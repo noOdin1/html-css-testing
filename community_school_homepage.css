@@ -120,14 +120,22 @@ a {
   font-size: 1em;
 }
 
-p {
+p:nth-of-type(odd) {
   text-indent: 2em;
 }
 
-section p:nth-of-type(even) {
-  text-indent: 0;
-  /* font-size: 10em; */
-}
+/* NOTE: You can either use the code above or the
+*        code blocks below. 
+**/
+/* p { */
+/*   text-indent: 2em; */
+/* } */
+/**/
+/* section p:nth-of-type(even) { */
+/*   text-indent: 0; */
+/*   /* font-size: 10em; */
+/* */
+/* } */
 
 section {
   text-align: justify;
@@ -143,7 +151,8 @@ aside {
 }
 
 aside > ul {
-  line-height: 3em;
+  line-height: 3.5em;
+  font-size: 1.2em;
 }
 
 nav > ul {
