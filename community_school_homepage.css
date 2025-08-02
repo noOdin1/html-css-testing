@@ -120,7 +120,11 @@ a {
   font-size: 1em;
 }
 
-p:nth-of-type(odd) {
+/* p:nth-of-type(odd) { */
+/*   text-indent: 2em; */
+/* } */
+
+h2 + p {
   text-indent: 2em;
 }
 
