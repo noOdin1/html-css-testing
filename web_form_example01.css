@@ -3,6 +3,9 @@
 /*   font-size: 16px; */
 /* } */
 
+/* the following block will reset the padding and margin for 
+ * all elements 
+ **/
 * {
   padding: 0;
   margin: 0;
@@ -14,11 +17,6 @@ body {
 
 form {
   display: inline-block;
-  /* /* Form outline */ */
-  /* padding: 1em; */
-  /* border: 1px solid #ccc; */
-  /* border-radius: 1em; */
-
   /* Just to center the form on the page */
   margin: auto;
   margin-top: 50px;
