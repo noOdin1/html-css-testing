@@ -91,7 +91,7 @@ button {
 }
 
 /*
- * The following 2 blocks of code will align the button with the text field.
+ * The following 3 blocks of code will align the button with the text field.
  * The source for this solution: 
  *   https://www.codeproject.com/Tips/1167666/How-to-Apply-CSS-HACKS-for-Different-Browsers-Chro
  **/
@@ -110,7 +110,15 @@ button {
 }
 
 /* Styles for INTERNET EXPLORER (Version > 10 and Microsoft Edge) */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+/* @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { */
+/*   button { */
+/*     margin-left: 0.8em; */
+/*   } */
+/* } */
+
+/* Microsoft Edge alternative */
+/*  src: https://dev.to/stephanlamoureux/how-to-target-specific-browsers-only-with-css-3jog */
+@supports (-ms-ime-align: auto) {
   button {
     margin-left: 0.8em;
   }
