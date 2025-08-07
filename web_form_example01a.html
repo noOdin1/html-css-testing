@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Form Example 01</title>
+    <!-- <link href="web_form_example01.css" rel="stylesheet" /> -->
+    <!--
+      This is an example of creating a web form. The source for this 
+      example: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Your_first_form
+      Date: 2025-08-07 02:08
+      This file was created for MS Edge, where the CSS file is in this html file.
+    -->
+    <style>
+      /* CSS Styling for web_form_example01.html */
+      /* * { */
+      /*   font-size: 16px; */
+      /* } */
+
+      /* the following block will reset the padding and margin for
+       * all elements
+       **/
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        text-align: center;
+      }
+
+      form {
+        display: inline-block;
+        /* Just to center the form on the page */
+        margin: auto;
+        margin-top: 50px;
+        width: 400px;
+
+        /* To see the limits of the form */
+        padding: 1em;
+        border: 1px solid #ccc;
+        border-radius: 1em;
+      }
+
+      p + p {
+        margin-top: 1em;
+      }
+
+      label {
+        /* Uniform size and alignment */
+        display: inline-block;
+        min-width: 90px;
+        text-align: right;
+      }
+
+      input,
+      textarea {
+        /* To make sure that all text fields have the same font settings
+        **  by default, text areas have a monospace font
+        **/
+        font: 1em sans-serif;
+        /* Uniform text field size */
+        width: 300px;
+        box-sizing: border-box;
+        /* Match form field borders */
+        border: 1px solid #999;
+      }
+
+      input:focus,
+      textarea:focus {
+        /* Set the outline width and style */
+        outline-style: solid;
+        /* To give a little highlight on active elements */
+        outline-color: #000;
+      }
+
+      textarea {
+        /* Align multiline text fields with their labels */
+        vertical-align: top;
+        /* Provide space to type some text */
+        height: 5em;
+      }
+
+      /**
+       * NOTE:
+       *  After some tinkering and trouble shooting on the alignment I found
+       *  the button would not align with the left-side of the text fields.
+       *  The reason was because <p> has a width of 300px.
+       *  The button inside of <p> would be centered.
+       *  (text-align: left) was added to move the button to the left side
+       *  of <p>.
+       */
+      p.button {
+        /* Align buttons to the left of the text field */
+        /* same size as the label elements */
+        padding-left: 90px;
+        text-align: left;
+      }
+
+      button {
+        /* This extra margin represents roughly  the same space as the space
+        ** between the labels and their text fields.
+        **/
+        padding: 0.2em 0.5em;
+      }
+
+      /*
+       * The following 3 blocks of code will align the button with the text field.
+       * The source for this solution:
+       *   https://www.codeproject.com/Tips/1167666/How-to-Apply-CSS-HACKS-for-Different-Browsers-Chro
+       **/
+      /* Google Chrome browser 55.0.2883.87 */
+      @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        button {
+          margin-left: 0.5em;
+        }
+      }
+
+      /* Mozilla Firefox 51.0.1 */
+      @-moz-document url-prefix() {
+        button {
+          margin-left: 0.7em;
+        }
+      }
+
+      /* Styles for INTERNET EXPLORER (Version > 10 and Microsoft Edge) */
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        button {
+          margin-left: 0.8em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form action="url/to/process/the/data" method="post">
+      <p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" />
+      </p>
+      <p>
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email" />
+      </p>
+      <p>
+        <label for="msg">Message:</label>
+        <textarea type="" id="msg" name="user_message"></textarea>
+      </p>
+      <p class="button">
+        <button type="submit">Send your message</button>
+      </p>
+    </form>
+  </body>
+  <!-- <script src=""></script> -->
+</html>
