@@ -124,7 +124,15 @@
       }
 
       /* Styles for INTERNET EXPLORER (Version > 10 and Microsoft Edge) */
-      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      /* @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { */
+      /*   button { */
+      /*     margin-left: 0.8em; */
+      /*   } */
+      /* } */
+
+      /* Microsoft Edge alternative */
+      /*  src: https://dev.to/stephanlamoureux/how-to-target-specific-browsers-only-with-css-3jog */
+      @supports (-ms-ime-align: auto) {
         button {
           margin-left: 0.8em;
         }
