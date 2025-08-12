@@ -13,18 +13,49 @@ body {
   flex-direction: row;
 }
 
-.leftside.container > .containerInfo {
+.containerInfo {
   text-align: center;
+}
+.container {
+  border: 1px solid MediumVioletRed;
+}
+
+.left.inner {
+  height: 160px;
+  /* width: max(70px 160px 100%); */
+  font-size: 0.8em;
+}
+
+#left_2nd_sub_main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.first.left.inner,
+.second.left.inner {
+  width: 100%;
+}
+
+.third.left.inner,
+.fourth.left.inner {
+  min-width: 120px;
 }
 
 .leftside.container {
   width: 35%;
   height: 100vh;
-  border: 1px solid MediumVioletRed;
+  display: flex;
+  flex-direction: column;
+}
+
+.left.submain {
+  display: flex;
+  flex-direction: row;
 }
 
 .rightside.container {
   width: 65%;
   height: 100vh;
-  border: 1px solid MediumVioletRed;
 }

@@ -10,12 +10,34 @@
      -->
   </head>
   <body>
-    <div class="leftside container">
+    <div class="leftside container" id="lhsMainContainer">
       <p class="containerInfo" id="lhsMainContainerInfo">[Testing]</p>
-      <div id="first leftside item"></div>
-      <div id="second lefside item"></div>
+      <p class="containerInfo" id="l1stSubMainCntInfo">
+        [1st submain 100% width]
+      </p>
+      <div id="left_1st_sub_main" class="submain left container">
+        <div id="first_left_item" class="first left inner container">
+          <p id="first_left_item_info" class="containerInfo">[1st]</p>
+        </div>
+        <div id="second_left_item" class="second left inner container">
+          <p id="second_left_item_info" class="containerInfo">[2nd]</p>
+        </div>
+      </div>
+      <p class="containerInfo" id="l2ndSubMainCntInfo">
+        [2nd submain min-width: 120px]
+      </p>
+      <div id="left_2nd_sub_main" class="submain left container">
+        <div id="third_left_item" class="third left inner container">
+          <p id="third_left_item_info" class="containerInfo">[3rd]</p>
+        </div>
+        <div id="fourth_left_item" class="fourth left inner container">
+          <p id="fourth_left_item_info" class="containerInfo">[4th]</p>
+        </div>
+      </div>
     </div>
-    <div class="rightside container"></div>
+    <div class="rightside container" id="rhsMainContainer">
+      <p class="containerInfo" id="rhsMainContainerInfo">[Testing]</p>
+    </div>
   </body>
-  <!-- <script src=""></script> -->
+  <script src="responsive_example01.js"></script>
 </html>
