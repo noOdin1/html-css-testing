@@ -24,6 +24,7 @@ function printMainCntChanges() {
 function printLeftItemInfo() {
   printLeft1stSubMainInfo();
   printLeft2ndSubMainInfo();
+  printLeft3rdSubMainInfo();
 }
 
 function printLeft1stSubMainInfo() {
@@ -59,6 +60,24 @@ function printLeft2ndSubMainInfo() {
     left4thItem +
     ", " +
     Number.parseFloat((left4thItem / windowWidth) * 100).toFixed(2) +
+    "%]";
+}
+
+function printLeft3rdSubMainInfo() {
+  var left5thItem = document.getElementById("fifth_left_item").offsetWidth;
+  var left6thItem = document.getElementById("sixth_left_item").offsetWidth;
+  fifth_left_item_info.textContent =
+    "[" +
+    left5thItem +
+    ", " +
+    Number.parseFloat((left5thItem / windowWidth) * 100).toFixed(2) +
+    "%]";
+
+  sixth_left_item_info.textContent =
+    "[" +
+    left6thItem +
+    ", " +
+    Number.parseFloat((left6thItem / windowWidth) * 100).toFixed(2) +
     "%]";
 }
 

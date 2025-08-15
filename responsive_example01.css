@@ -33,14 +33,11 @@ body {
   justify-content: space-evenly;
 }
 
-.first.left.inner,
-.second.left.inner {
-  width: 100%;
-}
-
-.third.left.inner,
-.fourth.left.inner {
-  min-width: 120px;
+#left_3rd_sub_main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .leftside.container {
@@ -58,4 +55,20 @@ body {
 .rightside.container {
   width: 65%;
   height: 100vh;
+}
+
+.first.left.inner,
+.second.left.inner {
+  width: 100%;
+}
+
+.third.left.inner,
+.fourth.left.inner {
+  min-width: 120px;
+}
+
+.fifth.left.inner,
+.sixth.left.inner {
+  width: max(100px, 35%); */
+  /* min-width: 100px; */
 }
