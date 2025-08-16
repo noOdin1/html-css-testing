@@ -66,19 +66,30 @@ function printLeft2ndSubMainInfo() {
 function printLeft3rdSubMainInfo() {
   var left5thItem = document.getElementById("fifth_left_item").offsetWidth;
   var left6thItem = document.getElementById("sixth_left_item").offsetWidth;
+  var mainCntWidth = document.getElementById("left_3rd_sub_main").clientWidth;
+  var thirdSub_100px = document.getElementById("thridSubMain_100px");
+  var thirdSub_35pct = document.getElementById("thridSubMain_35pct");
   fifth_left_item_info.textContent =
     "[" +
     left5thItem +
     ", " +
-    Number.parseFloat((left5thItem / windowWidth) * 100).toFixed(2) +
+    Number.parseFloat((left5thItem / mainCntWidth) * 100).toFixed(2) +
     "%]";
 
   sixth_left_item_info.textContent =
     "[" +
     left6thItem +
     ", " +
-    Number.parseFloat((left6thItem / windowWidth) * 100).toFixed(2) +
+    Number.parseFloat((left6thItem / mainCntWidth) * 100).toFixed(2) +
     "%]";
+  if (left5thItem > 100) {
+    thirdSub_35pct.classList.add("yellow_bg");
+    thirdSub_100px.classList.remove("yellow_bg");
+  }
+  if (left5thItem <= 100) {
+    thirdSub_35pct.classList.remove("yellow_bg");
+    thirdSub_100px.classList.add("yellow_bg");
+  }
 }
 
 function printWidthChanges() {

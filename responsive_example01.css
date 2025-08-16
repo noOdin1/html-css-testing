@@ -26,6 +26,10 @@ body {
   font-size: 0.8em;
 }
 
+.yellow_bg {
+  background-color: yellow;
+}
+
 #left_2nd_sub_main {
   display: flex;
   flex-direction: row;
