@@ -32,8 +32,6 @@ function createElement(elemType, class_list, unique_id, text_content) {
     element.textContent = text_content;
   }
 
-  console.log(element);
-
   return element;
 }
 
